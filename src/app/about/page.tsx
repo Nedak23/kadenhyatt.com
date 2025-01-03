@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About | Kaden Hyatt',
+  description: 'Learn more about Kaden Hyatt, my background, and professional journey.',
+}
+
 export default function About() {
   return (
     <main className="py-20">
