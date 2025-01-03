@@ -16,14 +16,14 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="hover:text-blue-600 transition-colors">
-              Home
+            <Link href="/projects" className="hover:text-blue-600 transition-colors">
+              Projects
+            </Link>
+            <Link href="/blog" className="hover:text-blue-600 transition-colors">
+              Blog
             </Link>
             <Link href="/about" className="hover:text-blue-600 transition-colors">
               About
-            </Link>
-            <Link href="/projects" className="hover:text-blue-600 transition-colors">
-              Projects
             </Link>
             <Link href="/contact" className="hover:text-blue-600 transition-colors">
               Contact
@@ -62,11 +62,18 @@ export default function Navbar() {
           <div className="md:hidden" id="mobile-menu">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
               <Link 
-                href="/" 
+                href="/projects" 
                 className="block px-3 py-2 rounded-md hover:bg-gray-100"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                Projects
+              </Link>
+              <Link 
+                href="/blog" 
+                className="block px-3 py-2 rounded-md hover:bg-gray-100"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </Link>
               <Link 
                 href="/about" 
@@ -74,13 +81,6 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </Link>
-              <Link 
-                href="/projects" 
-                className="block px-3 py-2 rounded-md hover:bg-gray-100"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Projects
               </Link>
               <Link 
                 href="/contact" 

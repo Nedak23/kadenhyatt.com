@@ -1,4 +1,31 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+interface BlogPost {
+  slug: string
+  title: string
+  date: string
+  description: string
+  readTime: string
+}
+
+// Example featured blog posts - replace with your actual blog posts
+const featuredPosts: BlogPost[] = [
+  {
+    slug: 'example-post-1',
+    title: 'Example Blog Post 1',
+    date: 'January 1, 2024',
+    description: 'This is a brief description of what this blog post is about. It should give readers a quick overview of the content.',
+    readTime: '5 min read'
+  },
+  {
+    slug: 'example-post-2',
+    title: 'Example Blog Post 2',
+    date: 'January 5, 2024',
+    description: 'Another example blog post description. Make it engaging to encourage readers to click through.',
+    readTime: '3 min read'
+  },
+]
 
 export default function Home() {
   return (
@@ -32,67 +59,106 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Section */}
+      {/* Race to Kepler Section */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Featured Work</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Project Card 1 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 bg-gray-200"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Project One</h3>
-                <p className="text-gray-600 mb-4">
-                  Brief description of your first featured project.
-                </p>
-                <Link 
-                  href="/projects/1"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn More →
-                </Link>
+          <h2 className="text-3xl font-bold mb-12 text-center">Race to Kepler</h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="bg-gray-200 rounded-lg aspect-video relative">
+              {/* Replace with actual project image */}
+              <div className="absolute inset-0 flex items-center justify-center text-gray-500">
+                Project Screenshot
               </div>
             </div>
-
-            {/* Project Card 2 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 bg-gray-200"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Project Two</h3>
-                <p className="text-gray-600 mb-4">
-                  Brief description of your second featured project.
-                </p>
-                <Link 
-                  href="/projects/2"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
-
-            {/* Project Card 3 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 bg-gray-200"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Project Three</h3>
-                <p className="text-gray-600 mb-4">
-                  Brief description of your third featured project.
-                </p>
-                <Link 
-                  href="/projects/3"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn More →
-                </Link>
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">About the Project</h3>
+              <p className="text-gray-600 mb-6">
+                Race to Kepler is an exciting project that... [Add your project description here]
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Technology 1
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Technology 2
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Technology 3
+                    </span>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <a 
+                    href="#" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    View Project →
+                  </a>
+                  <a 
+                    href="#" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Source Code →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Featured Blog Posts */}
       <section className="bg-gray-50 py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">Featured Blog Posts</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {featuredPosts.map((post) => (
+              <article 
+                key={post.slug}
+                className="bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <Link 
+                  href={`/blog/${post.slug}`}
+                  className="block group p-6"
+                >
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+                    {post.title}
+                  </h3>
+                  <div className="flex items-center text-gray-600 text-sm space-x-4 mb-4">
+                    <time>{post.date}</time>
+                    <span>•</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                  <p className="text-gray-600 mb-4">
+                    {post.description}
+                  </p>
+                  <span className="text-blue-600 group-hover:text-blue-800 transition-colors">
+                    Read more →
+                  </span>
+                </Link>
+              </article>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link 
+              href="/blog"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              View All Posts
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Skills & Expertise</h2>
           <div className="grid md:grid-cols-4 gap-6">

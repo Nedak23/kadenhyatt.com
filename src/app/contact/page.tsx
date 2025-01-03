@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact | Kaden Hyatt',
-  description: 'Get in touch with Kaden Hyatt for collaborations and opportunities.',
+  description: 'Get in touch with Kaden Hyatt for collaborations and opportunities. Contains contact info and a form to send me a message.',
 }
 
 export default function Contact() {
@@ -23,14 +23,14 @@ export default function Contact() {
                   href="mailto:your.email@example.com" 
                   className="text-blue-600 hover:text-blue-800"
                 >
-                  your.email@example.com
+                  kadenhyatt@gmail.com
                 </a>
               </div>
               <div>
                 <h2 className="font-semibold mb-2">Social Media</h2>
                 <div className="flex gap-4">
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/kaden-hyatt/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800"
@@ -38,7 +38,7 @@ export default function Contact() {
                     LinkedIn
                   </a>
                   <a 
-                    href="#" 
+                    href="https://github.com/Nedak23" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800"
@@ -46,7 +46,7 @@ export default function Contact() {
                     GitHub
                   </a>
                   <a 
-                    href="#" 
+                    href="https://x.com/kaden_hyatt" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800"
