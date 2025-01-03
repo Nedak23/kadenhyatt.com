@@ -38,8 +38,8 @@ export default function Home() {
               Hi, I'm Kaden Hyatt
             </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Welcome to my corner of the web. I'm passionate about [your interests/profession] 
-              and love to [what you do/create].
+              Welcome to my corner of the web. I'm passionate about Game Design and Data Science.
+              and love to discuss whatever my mind is on.
             </p>
             <div className="flex justify-center gap-4">
               <Link 
@@ -164,20 +164,20 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-6">
             {/* Add your skills here */}
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-semibold mb-2">Skill Category 1</h3>
-              <p className="text-gray-600">Description of your expertise</p>
+              <h3 className="font-semibold mb-2">Python</h3>
+              <p className="text-gray-600">I have a strong understanding of Python and its libraries, and I'm proficient in using it for data analysis, machine learning, and web development.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-semibold mb-2">Skill Category 2</h3>
-              <p className="text-gray-600">Description of your expertise</p>
+              <h3 className="font-semibold mb-2">R</h3>
+              <p className="text-gray-600">Gained experience with R through my work in academia. Both creating models and graphs as well as translating between R and Python.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-semibold mb-2">Skill Category 3</h3>
-              <p className="text-gray-600">Description of your expertise</p>
+              <h3 className="font-semibold mb-2">SQL</h3>
+              <p className="text-gray-600">Basic experience with SQL through classes and personal projects. Used to interfacing with databases.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-semibold mb-2">Skill Category 4</h3>
-              <p className="text-gray-600">Description of your expertise</p>
+              <h3 className="font-semibold mb-2">Game Design</h3>
+              <p className="text-gray-600">I have a deep love for Game Design and through my work on Race to Kepler, I have learned a tremendous amount.</p>
             </div>
           </div>
         </div>
