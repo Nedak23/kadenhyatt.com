@@ -59,10 +59,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Race to Kepler Section */}
+      {/* Current Project Section */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Race to Kepler</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Current Project</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="bg-gray-200 rounded-lg aspect-video relative">
               {/* Replace with actual project image */}
@@ -71,6 +71,7 @@ export default function Home() {
               </div>
             </div>
             <div>
+              <h2 className="text-3xl font-bold mb-4">Race to Kepler</h2>
               <h3 className="text-2xl font-semibold mb-4">About the Project</h3>
               <p className="text-gray-600 mb-6">
                 Race to Kepler is an innovative deck-building game where players compete to be the first to reach Kepler 452-b. Game includes: strategic resource management, bidding for powerful titan cards, and many unique ships players adding replayability.
