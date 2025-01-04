@@ -59,24 +59,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Current Project Section */}
+      {/* Race to Kepler Section */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Current Project</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Race to Kepler</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-200 rounded-lg aspect-video relative">
-              {/* Replace with actual project image */}
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500">
-                Project Screenshot
-              </div>
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src="/race-to-kepler.jpg"
+                alt="Race to Kepler - A space-themed deck-building game"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+                priority
+              />
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-4">Race to Kepler</h2>
               <h3 className="text-2xl font-semibold mb-4">About the Project</h3>
               <p className="text-gray-600 mb-6">
-                Race to Kepler is an innovative deck-building game where players compete to be the first to reach Kepler 452-b. Game includes: strategic resource management, bidding for powerful titan cards, and many unique ships players adding replayability.
+                Race to Kepler is an innovative deck-building game where players compete to be the first to reach Kepler 452-b.
               </p>
               <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">Key Features</h4>
+                  <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                    <li>Strategic deck building and resource management</li>
+                    <li>Competitive bidding for powerful titan cards</li>
+                    <li>Multiple unique ships for high replayability</li>
+                    <li>Space-themed adventure racing game</li>
+                  </ul>
+                </div>
                 <div>
                   <h4 className="font-semibold mb-2">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">

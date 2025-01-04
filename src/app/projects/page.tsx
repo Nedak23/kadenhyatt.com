@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Projects | Kaden Hyatt',
@@ -14,16 +15,20 @@ export default function Projects() {
         {/* Race to Kepler */}
         <div className="mb-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-200 rounded-lg aspect-video relative">
-              {/* Replace with actual project image */}
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500">
-                Project Screenshot
-              </div>
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src="/race-to-kepler.jpg"
+                alt="Race to Kepler - A space-themed deck-building game"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+                priority
+              />
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Race to Kepler</h2>
               <p className="text-gray-600 mb-6">
-                Race to Kepler is an innovative deck-building game where players compete to be the first to reach Kepler 452-b. Game includes: strategic resource management, bidding for powerful titan cards, and many unique ships players adding replayability.
+                Race to Kepler is an innovative deck-building game where players compete to be the first to reach Kepler 452-b.
               </p>
               <div className="space-y-6">
                 <div>
