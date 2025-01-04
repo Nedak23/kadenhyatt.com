@@ -73,7 +73,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold mb-4">About the Project</h3>
               <p className="text-gray-600 mb-6">
-                Race to Kepler is an innovative and engaging deck-building game. Crowdfunding soon!
+                Race to Kepler is an innovative deck-building game where players compete to be the first to reach the Kepler system. Through strategic resource management, ship upgrades, and careful navigation of space hazards, players must outmaneuver their opponents in this thrilling race through the cosmos. Crowdfunding coming soon!
               </p>
               <div className="space-y-4">
                 <div>
@@ -97,15 +97,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 font-medium"
                   >
-                    View Project →
-                  </a>
-                  <a 
-                    href="#" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 font-medium"
-                  >
-                    Source Code →
+                    Learn More →
                   </a>
                 </div>
               </div>
