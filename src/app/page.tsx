@@ -97,15 +97,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 font-medium"
                   >
-                    View Project →
-                  </a>
-                  <a 
-                    href="#" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 font-medium"
-                  >
-                    Source Code →
+                    Learn More →
                   </a>
                 </div>
               </div>
