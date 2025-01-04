@@ -12,21 +12,20 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-12">My Projects</h1>
         
-        {/* Race to Kepler */}
-        <div className="mb-20">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="rounded-lg overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Race to Kepler */}
+          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+            <div className="aspect-video relative">
               <Image
-                src="/race-to-kepler.jpg"
+                src="/KeplerTitleImage.png"
                 alt="Race to Kepler - A space-themed deck-building game"
-                width={1200}
-                height={800}
-                className="w-full h-auto"
+                fill
+                className="object-cover"
                 priority
               />
             </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Race to Kepler</h2>
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-4">Race to Kepler</h2>
               <p className="text-gray-600 mb-6">
                 Race to Kepler is an innovative deck-building game where players compete to be the first to reach Kepler 452-b.
               </p>
@@ -67,16 +66,44 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Future Projects Section */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="h-48 bg-gray-200 rounded-lg mb-4"></div>
-            <h3 className="text-xl font-semibold mb-2">More Coming Soon</h3>
-            <p className="text-gray-600">
-              I'm always working on new projects. Check back later for updates!
-            </p>
+          {/* Personal Website */}
+          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden h-fit">
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-4">Personal Website</h2>
+              <p className="text-gray-600 mb-6">
+                The website you are looking at now! Built with Next.js and Tailwind CSS.
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-2">Technologies Used</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Next.js
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Git
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      TypeScript
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Tailwind CSS
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <a 
+                    href="https://github.com/Nedak23/kadenhyatt.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition-colors"
+                  >
+                    View Source →
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

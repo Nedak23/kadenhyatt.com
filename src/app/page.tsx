@@ -38,8 +38,8 @@ export default function Home() {
               Hi, I'm Kaden Hyatt
             </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Welcome to my corner of the web. I'm passionate about Game Design and Data Science.
-              and love to discuss whatever my mind is on.
+              Welcome to my corner of the web. I'm passionate about Game Design, Data Science,
+              and whatever else my mind is on.
             </p>
             <div className="flex justify-center gap-4">
               <Link 
@@ -62,11 +62,11 @@ export default function Home() {
       {/* Race to Kepler Section */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Race to Kepler</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Current Project</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/race-to-kepler.jpg"
+                src="/KeplerTitleImage.png"
                 alt="Race to Kepler - A space-themed deck-building game"
                 width={1200}
                 height={800}
@@ -75,7 +75,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">About the Project</h3>
+              <h3 className="text-2xl font-semibold mb-4">Race to Kepler</h3>
               <p className="text-gray-600 mb-6">
                 Race to Kepler is an innovative deck-building game where players compete to be the first to reach Kepler 452-b.
               </p>
