@@ -73,20 +73,20 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold mb-4">About the Project</h3>
               <p className="text-gray-600 mb-6">
-                Race to Kepler is an exciting project that... [Add your project description here]
+                Race to Kepler is an innovative and engaging deck-building game. Crowdfunding soon!
               </p>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold mb-2">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                      Technology 1
+                      Python
                     </span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                      Technology 2
+                      Figma
                     </span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                      Technology 3
+                      Excel
                     </span>
                   </div>
                 </div>
