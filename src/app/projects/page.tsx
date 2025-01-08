@@ -34,7 +34,7 @@ export default function Projects() {
                   <h3 className="font-semibold mb-2">Key Features</h3>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>Strategic deck building and resource management</li>
-                    <li>Competitive bidding for powerful titan cards</li>
+                    <li>Competitive bidding for powerful Titan cards</li>
                     <li>Multiple unique ships for high replayability</li>
                     <li>Space-themed adventure racing game</li>
                   </ul>
@@ -52,16 +52,6 @@ export default function Projects() {
                       Excel
                     </span>
                   </div>
-                </div>
-                <div>
-                  <a 
-                    href="#" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    Learn More
-                  </a>
                 </div>
               </div>
             </div>

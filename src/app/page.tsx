@@ -1,49 +1,27 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-interface BlogPost {
-  slug: string
-  title: string
-  date: string
-  description: string
-  readTime: string
-}
-
-// Example featured blog posts - replace with your actual blog posts
-const featuredPosts: BlogPost[] = [
-  {
-    slug: 'example-post-1',
-    title: 'Example Blog Post 1',
-    date: 'January 1, 2024',
-    description: 'This is a brief description of what this blog post is about. It should give readers a quick overview of the content.',
-    readTime: '5 min read'
-  },
-  {
-    slug: 'example-post-2',
-    title: 'Example Blog Post 2',
-    date: 'January 5, 2024',
-    description: 'Another example blog post description. Make it engaging to encourage readers to click through.',
-    readTime: '3 min read'
-  },
-]
-
 export default function Home() {
   return (
     <main>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="max-w-6xl mx-auto px-4 py-20">
-          <div className="text-center">
+      {/* Title Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 py-16 relative">
+          <div className="max-w-xl">
             <h1 className="text-5xl font-bold mb-6">
               Hi, I'm Kaden Hyatt
             </h1>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Welcome to my corner of the web. I'm passionate about Game Design, Data Science,
-              and whatever else my mind is on.
-            </p>
-            <div className="flex justify-center gap-4">
+            <div className="space-y-4 text-lg">
+              <p>
+                I'm a Data Science and Computer Science major at The Univeristy of Chicago. I am a long-time 
+                competitive card game player with a passion for game design. 
+                With a background in survey science and experimental design, I have a strong foundation in 
+                both the qualitative and quantitative aspects of data science.
+              </p>
+            </div>
+            <div className="flex gap-4 mt-8">
               <Link 
-                href="/projects"
+                href="/about"
                 className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
               >
                 View My Work
@@ -56,10 +34,20 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          {/* Profile Image */}
+          <div className="absolute top-16 right-32 w-[300px] h-[300px] rounded-full overflow-hidden">
+            <Image
+              src="/ProfileImage.jpg"
+              alt="Kaden Hyatt"
+              fill
+              className="object-cover object-[center_5%]"
+              priority
+            />
+          </div>
         </div>
       </section>
 
-      {/* Race to Kepler Section */}
+      {/* Current Project Section */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Current Project</h2>
@@ -84,7 +72,7 @@ export default function Home() {
                   <h4 className="font-semibold mb-2">Key Features</h4>
                   <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
                     <li>Strategic deck building and resource management</li>
-                    <li>Competitive bidding for powerful titan cards</li>
+                    <li>Competitive bidding for powerful Titan cards</li>
                     <li>Multiple unique ships for high replayability</li>
                     <li>Space-themed adventure racing game</li>
                   </ul>
@@ -103,86 +91,7 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <a 
-                    href="#" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 font-medium"
-                  >
-                    Learn More →
-                  </a>
-                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Blog Posts */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Featured Blog Posts</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {featuredPosts.map((post) => (
-              <article 
-                key={post.slug}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-              >
-                <Link 
-                  href={`/blog/${post.slug}`}
-                  className="block group p-6"
-                >
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
-                    {post.title}
-                  </h3>
-                  <div className="flex items-center text-gray-600 text-sm space-x-4 mb-4">
-                    <time>{post.date}</time>
-                    <span>•</span>
-                    <span>{post.readTime}</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">
-                    {post.description}
-                  </p>
-                  <span className="text-blue-600 group-hover:text-blue-800 transition-colors">
-                    Read more →
-                  </span>
-                </Link>
-              </article>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link 
-              href="/blog"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-            >
-              View All Posts
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Skills & Expertise</h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            {/* Add your skills here */}
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-semibold mb-2">Python</h3>
-              <p className="text-gray-600">I have a strong understanding of Python and its libraries, and I'm proficient in using it for data analysis, machine learning, and web development.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-semibold mb-2">R</h3>
-              <p className="text-gray-600">Gained experience with R through my work in academia. Both creating models and graphs as well as translating between R and Python.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-semibold mb-2">SQL</h3>
-              <p className="text-gray-600">Basic experience with SQL through classes and personal projects. Used to interfacing with databases.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-semibold mb-2">Game Design</h3>
-              <p className="text-gray-600">I have a deep love for Game Design and through my work on Race to Kepler, I have learned a tremendous amount.</p>
             </div>
           </div>
         </div>
