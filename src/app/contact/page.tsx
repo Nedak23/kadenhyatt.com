@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact | Kaden Hyatt',
@@ -20,7 +21,7 @@ export default function Contact() {
               <div>
                 <h2 className="font-semibold mb-2">Email</h2>
                 <a 
-                  href="mailto:your.email@example.com" 
+                  href="mailto:kadenhyatt@gmail.com" 
                   className="text-blue-600 hover:text-blue-800"
                 >
                   kadenhyatt@gmail.com
@@ -59,50 +60,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <form className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block mb-2 font-medium">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block mb-2 font-medium">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block mb-2 font-medium">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-            >
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </main>
