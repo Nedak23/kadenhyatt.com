@@ -1,4 +1,4 @@
-# [kadenhyatt.com](https://kadenhyatt.com)
+# [kadenhyatt.com](https://www.kadenhyatt.com)
 
 My personal website built with Next.js, TypeScript, and Tailwind CSS. Features a modern, responsive design with sections for my projects, blog, and professional experience.
 
