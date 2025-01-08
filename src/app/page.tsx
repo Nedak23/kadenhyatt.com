@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <main>
       {/* Title Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white relative overflow-hidden">
+      <section className="relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 py-16 relative">
-          <div className="max-w-xl">
-            <h1 className="text-5xl font-bold mb-6">
+          <div className="max-w-xl pl-8">
+            <h1 className="text-5xl font-bold mb-6 text-gray-900">
               Hi, I'm Kaden Hyatt
             </h1>
-            <div className="space-y-4 text-lg">
+            <div className="space-y-4 text-lg text-gray-700">
               <p>
                 I'm a Data Science and Computer Science major at The Univeristy of Chicago. I am a long-time 
                 competitive card game player with a passion for game design. 
@@ -22,13 +22,13 @@ export default function Home() {
             <div className="flex gap-4 mt-8">
               <Link 
                 href="/about"
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
                 View My Work
               </Link>
               <Link 
                 href="/contact"
-                className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+                className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
               >
                 Get in Touch
               </Link>
@@ -50,7 +50,10 @@ export default function Home() {
       {/* Current Project Section */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Current Project</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center tracking-tight">
+            Current Project
+            <div className="h-1 w-24 bg-blue-600 mx-auto mt-4"></div>
+          </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden">
               <Image

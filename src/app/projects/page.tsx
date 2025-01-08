@@ -57,6 +57,44 @@ export default function Projects() {
             </div>
           </div>
 
+          {/* Which Frame Fits? Research */}
+          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden h-fit">
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-4">Which Frame Fits?</h2>
+              <p className="text-gray-600 mb-6">
+                Research project with the Social Science Department at the University of Chicago studying how different policy framings affect attitudes towards climate change policy.
+              </p>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="font-semibold mb-2">Key Contributions</h3>
+                  <ul className="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Created machine learning algorithms to predict effective policy framings</li>
+                    <li>Developed models using demographic information and survey responses</li>
+                    <li>Generated data visualizations for research findings</li>
+                    <li>Co-authored academic paper on policy learning and framing</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2">Technologies Used</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Python
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      R
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Pandas
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      ggplot2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Personal Website */}
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden h-fit">
             <div className="p-6">

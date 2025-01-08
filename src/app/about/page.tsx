@@ -23,7 +23,7 @@ export default function Experience() {
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-semibold mb-4">SQL</h3>
-              <p className="text-gray-600">Basic experience with SQL through classes and personal projects. Used to interfacing with databases.</p>
+              <p className="text-gray-600">Basic experience with SQL through classes and personal projects. Used to interfacing with databases and larger datasets.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-semibold mb-4">Game Design</h3>
