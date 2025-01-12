@@ -94,6 +94,16 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
+                <div className="mt-8">
+                  <a 
+                    href="https://racetokepler-com.vercel.app" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  >
+                    Visit Site →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
