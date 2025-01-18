@@ -52,7 +52,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="name" className="block mb-2 font-medium">
+        <label htmlFor="name" className="text-sm font-semibold uppercase tracking-wider block mb-2">
           Name
         </label>
         <input
@@ -61,12 +61,12 @@ export default function ContactForm() {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400"
           required
         />
       </div>
       <div>
-        <label htmlFor="email" className="block mb-2 font-medium">
+        <label htmlFor="email" className="text-sm font-semibold uppercase tracking-wider block mb-2">
           Email
         </label>
         <input
@@ -75,12 +75,12 @@ export default function ContactForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400"
           required
         />
       </div>
       <div>
-        <label htmlFor="message" className="block mb-2 font-medium">
+        <label htmlFor="message" className="text-sm font-semibold uppercase tracking-wider block mb-2">
           Message
         </label>
         <textarea
@@ -89,7 +89,7 @@ export default function ContactForm() {
           rows={4}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400"
           required
         ></textarea>
       </div>
@@ -109,10 +109,10 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors ${
+        className={`w-full py-3 px-6 rounded-lg text-lg font-medium transition-colors ${
           status === 'loading'
-            ? 'bg-blue-400 cursor-not-allowed'
-            : 'bg-blue-600 hover:bg-blue-700 text-white'
+            ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
+            : 'bg-gray-800 hover:bg-gray-900 text-white'
         }`}
       >
         {status === 'loading' ? 'Sending...' : 'Send Message'}

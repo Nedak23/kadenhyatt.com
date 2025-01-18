@@ -14,27 +14,27 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
-            <p className="text-lg mb-8">
+            <p className="text-lg text-gray-600 mb-8">
               I'm always open to new opportunities and collaborations. Feel free to reach out!
             </p>
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div>
-                <h2 className="font-semibold mb-2">Email</h2>
+                <h2 className="text-sm font-semibold uppercase tracking-wider mb-2">Email</h2>
                 <a 
                   href="mailto:kadenhyatt@gmail.com" 
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-lg underline underline-offset-4"
                 >
                   kadenhyatt@gmail.com
                 </a>
               </div>
               <div>
-                <h2 className="font-semibold mb-2">Social Media</h2>
-                <div className="flex gap-4">
+                <h2 className="text-sm font-semibold uppercase tracking-wider mb-2">Social Media</h2>
+                <div className="flex gap-6">
                   <a 
                     href="https://www.linkedin.com/in/kaden-hyatt/" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800"
+                    className="text-lg underline underline-offset-4"
                   >
                     LinkedIn
                   </a>
@@ -42,7 +42,7 @@ export default function Contact() {
                     href="https://github.com/Nedak23" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800"
+                    className="text-lg underline underline-offset-4"
                   >
                     GitHub
                   </a>
@@ -50,7 +50,7 @@ export default function Contact() {
                     href="https://x.com/kaden_hyatt" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800"
+                    className="text-lg underline underline-offset-4"
                   >
                     Twitter
                   </a>
