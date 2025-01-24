@@ -69,7 +69,7 @@ export default function Home() {
           </div>
           
           <a 
-            href="https://racetokepler-com.vercel.app" 
+            href="https://racetokepler.com" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg font-medium underline underline-offset-4"
