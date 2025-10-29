@@ -5,6 +5,13 @@ export default function Home() {
       
       <div className="mb-8 text-sm text-gray-500">
         <a 
+          href="/experience"
+          className="underline hover:no-underline"
+        >
+          Timeline
+        </a>
+        {' - '}
+        <a 
           href="https://www.linkedin.com/in/kaden-hyatt/" 
           target="_blank"
           rel="noopener noreferrer"
@@ -12,16 +19,16 @@ export default function Home() {
         >
           LinkedIn
         </a>
-        {'.'}
+        {' - '}
         <a 
           href="https://x.com/kaden_hyatt" 
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:no-underline"
         >
-          Twitter
+          X
         </a>
-        {'.'}
+        {' - '}
         <a 
           href="https://github.com/Nedak23" 
           target="_blank"
@@ -34,8 +41,8 @@ export default function Home() {
       
       <div className="space-y-8 leading-relaxed">
         <p>
-          I'm a Data Science and Computer Science major at The University of Chicago. I discovered my fascination 
-          with LLM implementation after a{' '}
+          I'm a Data Science and Computer Science major at The University of Chicago. I discovered my love for exploring 
+          unique ways for humans to interact with LLMs after a{' '}
           <a 
             href="https://www.linkedin.com/feed/update/urn:li:activity:7382792787341037568/" 
             target="_blank"
@@ -78,6 +85,7 @@ export default function Home() {
               Research project with the Social Science Department at the University of Chicago studying 
               how different policy framings affect attitudes towards climate change policy.
             </p>
+            <p className="text-gray-500">Status: In review</p>
           </div>
 
           <div className="space-y-3 pt-6">
@@ -96,16 +104,6 @@ export default function Home() {
               Built with D3.js as an exploration of how different game genres are related to each other.
             </p>
           </div>
-        </section>
-
-        <section className="space-y-4">
-          <h2 className="text-xl border-b border-black pb-1">Contact</h2>
-          <p>
-            Feel free to reach out at{' '}
-            <a href="mailto:kadenhyatt@gmail.com" className="underline hover:no-underline">
-              kadenhyatt@gmail.com
-            </a>
-          </p>
         </section>
       </div>
     </main>

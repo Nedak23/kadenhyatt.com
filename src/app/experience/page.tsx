@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Experience | Kaden Hyatt',
@@ -9,132 +10,94 @@ export default function Experience() {
   return (
     <main className="py-4">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Skills Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Skills</h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4">Coding</h3>
-              <p className="text-gray-600">Proficient in Python and R for data analysis, visualizations, and development.</p>
-            </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4">Machine Learning</h3>
-              <p className="text-gray-600">Experience with supervised/unsupervised learning through libraries like scikit-learn and statsmodels.</p>
-            </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4">SQL</h3>
-              <p className="text-gray-600">Basic experience with SQL through classes and personal projects.</p>
-            </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4">Game Design</h3>
-              <p className="text-gray-600">I have a deep love for Game Design and am working on my own game, Race to Kepler.</p>
-            </div>
-          </div>
-        </section>
-
         {/* Experience Timeline */}
         <section>
+          <Link href="/" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-4">
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
+          </Link>
           <h2 className="text-3xl font-bold mb-8">Experience</h2>
           <div className="space-y-12">
-            {/* Co-Founder, Chief Game Designer */}
+            {/* Co-Founder */}
             <div className="flex">
               <div className="w-32 flex-shrink-0">
                 <span className="text-gray-600">Jan 2023 - Present</span>
               </div>
-              <div className="border-l-2 border-blue-600 pl-8 pb-8">
-                <h3 className="text-xl font-semibold mb-2">Co-Founder, Chief Game Designer</h3>
-                <p className="text-gray-600 mb-4">Conduit Games Company · Self-employed · Remote</p>
+              <div className="border-l-2 border-gray-300 pl-8 pb-8">
+                <h3 className="text-xl font-semibold mb-2">Co-Founder</h3>
+                <p className="text-gray-600 mb-4">Conduit Games Company · Berkeley, California</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li>Designed the mechanics for the card game Race to Kepler</li>
-                  <li>Graphic layout and design in Figma for cards, game boxes, and marketing materials</li>
-                  <li>Organized marketing campaign via social media/Substack in preparation for crowdfunding</li>
-                  <li>Showcased Race to Kepler at PAX West 2024</li>
+                  <li>Built the Graphic layout and design in Figma for cards, game boxes, and marketing materials</li>
+                  <li>Showcased Race to Kepler at PAX West 2024 and GenCon 2025</li>
                 </ul>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Figma</span>
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Social Media Marketing</span>
-                </div>
+              </div>
+            </div>
+
+            {/* Replit - Product, Data */}
+            <div className="flex">
+              <div className="w-32 flex-shrink-0">
+                <span className="text-gray-600">Jul 2025 - Sep 2025</span>
+              </div>
+              <div className="border-l-2 border-gray-300 pl-8 pb-8">
+                <h3 className="text-xl font-semibold mb-2">Product, Data</h3>
+                <p className="text-gray-600 mb-4">Replit · Foster City, California</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  <li>Analyzed user price sensitivity to determine optimal pricing (~ +10% ARR)</li>
+                  <li>Identified and implemented key growth funnel optimization (~ +10% Initial Active Users)</li>
+                  <li>Developed a DAG to classify user messages using LLMs for A/B tests</li>
+                  <li>Built system to analyze LLM response times to common prompts to inform prompt tuning</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* UVS Games - Marketing Strategist */}
+            <div className="flex">
+              <div className="w-32 flex-shrink-0">
+                <span className="text-gray-600">Jun 2025 - Sep 2025</span>
+              </div>
+              <div className="border-l-2 border-gray-300 pl-8 pb-8">
+                <h3 className="text-xl font-semibold mb-2">Marketing Strategist</h3>
+                <p className="text-gray-600 mb-4">UVS Games · Remote</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  <li>Developed ideal demo experience for the Riftbound TCG</li>
+                  <li>Met with 15+ potential partners to negotiate demo partnerships</li>
+                  <li>Planned and presented marketing programs</li>
+                </ul>
               </div>
             </div>
 
             {/* Research Assistant */}
             <div className="flex">
               <div className="w-32 flex-shrink-0">
-                <span className="text-gray-600">Jun 2024 - Oct 2024</span>
+                <span className="text-gray-600">Jan 2024 - Oct 2024</span>
               </div>
-              <div className="border-l-2 border-blue-600 pl-8 pb-8">
+              <div className="border-l-2 border-gray-300 pl-8 pb-8">
                 <h3 className="text-xl font-semibold mb-2">Research Assistant</h3>
-                <p className="text-gray-600 mb-4">University of Chicago Division of the Social Sciences · Part-time · Remote</p>
+                <p className="text-gray-600 mb-4">Department of Social Science, University of Chicago · Chicago, Illinois</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li>Co-author on "Which frame fits? Policy learning with framing for climate change policy attitudes"</li>
-                  <li>Created machine learning algorithms to predict effective policy framings based on demographic information</li>
+                  <li>Built machine learning models in Python to predict effective policy framing based on demographic information</li>
                   <li>Used Pandas and StatsModels to code Linear Regression and Random Forest models in Python</li>
-                  <li>Created figures and plots in R using ggplot2</li>
+                  <li>Translated code from Python to R and encoded output into LaTeX</li>
                 </ul>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Python</span>
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">R</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Senior Sound Technician */}
-            <div className="flex">
-              <div className="w-32 flex-shrink-0">
-                <span className="text-gray-600">Aug 2022 - Sep 2023</span>
-              </div>
-              <div className="border-l-2 border-blue-600 pl-8 pb-8">
-                <h3 className="text-xl font-semibold mb-2">Senior Sound Technician</h3>
-                <p className="text-gray-600 mb-4">Oakland Interstake Theatre · Part-time · On-site</p>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Ran sound system for over 20 graduations, musicals, dance shows, etc.</li>
-                  <li>Mixing sound levels of 30+ live inputs using Yamaha CL5</li>
-                </ul>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Sound and Audio Equipment</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Tournament Organizer */}
-            <div className="flex">
-              <div className="w-32 flex-shrink-0">
-                <span className="text-gray-600">2019 - 2020</span>
-              </div>
-              <div className="border-l-2 border-blue-600 pl-8 pb-8">
-                <h3 className="text-xl font-semibold mb-2">Tournament Organizer & Moderator</h3>
-                <p className="text-gray-600 mb-4">Legends of Runeterra Community · Remote</p>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Organized and ran over 20 grassroots tournaments with 100+ players each</li>
-                  <li>Managed tournament brackets, player communications, and event moderation</li>
-                  <li>Built and maintained an active competitive community</li>
-                </ul>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Event Management</span>
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Community Building</span>
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Tournament Organization</span>
-                </div>
               </div>
             </div>
 
             {/* Competitive Card Game Player */}
             <div className="flex">
               <div className="w-32 flex-shrink-0">
-                <span className="text-gray-600">2013 - 2022</span>
+                <span className="text-gray-600">Jan 2013 - Jun 2023</span>
               </div>
-              <div className="border-l-2 border-blue-600 pl-8">
-                <h3 className="text-xl font-semibold mb-2">Professional Card Game Player</h3>
+              <div className="border-l-2 border-gray-300 pl-8">
+                <h3 className="text-xl font-semibold mb-2">Competitive Card Game Player</h3>
                 <p className="text-gray-600 mb-4">Competitive Gaming · International</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>6-time Pokémon Trading Card Game World Championships Competitor</li>
-                  <li>5-time Pokémon Trading Card Game Regional Champion</li>
-                  <li>Top 32 finish in Legends of Runeterra Duels of Runeterra Tournament</li>
-                  <li>Extensive experience in high-level strategic gameplay and deck building</li>
+                  <li>Six-time Pokémon TCG World Championship Competitor</li>
+                  <li>Five-time Pokémon TCG Regional Champion</li>
                 </ul>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Strategic Analysis</span>
-                  <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Tournament Play</span>
-                </div>
               </div>
             </div>
           </div>
