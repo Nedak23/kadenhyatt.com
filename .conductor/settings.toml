@@ -1,0 +1,19 @@
+#:schema https://conductor.build/schemas/settings.repo.schema.json
+
+# Shared Conductor config for kadenhyatt.com (Next.js 14 + TypeScript, npm).
+# Personal site with no shared local DB/services, so workspaces run in parallel.
+
+[scripts]
+# Clean, reproducible install from the committed package-lock.json on workspace creation.
+setup = "npm ci"
+
+# Start the Next.js dev server on this workspace's assigned port so several
+# workspaces can run at once without colliding on the default 3000.
+run = "npm run dev -- --port $CONDUCTOR_PORT"
+
+# Reclaim disk before archiving by removing regenerable, gitignored artifacts.
+archive = "rm -rf .next node_modules"
+
+# Each workspace gets its own CONDUCTOR_PORT and has no shared local state,
+# so multiple run scripts are safe to run simultaneously.
+run_mode = "concurrent"
