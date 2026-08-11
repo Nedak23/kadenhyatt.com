@@ -137,7 +137,7 @@ function TimelineSection({
     <section className="border-t border-stone-300 py-12 sm:py-16" aria-labelledby={title.toLowerCase()}>
       <div className="grid gap-8 md:grid-cols-[12rem_1fr] md:gap-12">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">{number}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-600">{number}</p>
           <h2 id={title.toLowerCase()} className="mt-2 text-xl font-semibold tracking-tight">
             {title}
           </h2>
@@ -149,12 +149,12 @@ function TimelineSection({
               className="relative border-l border-stone-300 pb-12 pl-6 last:pb-0 sm:grid sm:grid-cols-[9rem_1fr] sm:gap-8 sm:pl-8"
             >
               <span className="absolute -left-[5px] top-1.5 size-[9px] rounded-full border-2 border-orange-700 bg-[#f7f3eb]" />
-              <p className="mb-3 text-xs font-medium uppercase leading-5 tracking-wide text-stone-500 sm:mb-0">
+              <p className="mb-3 text-xs font-medium uppercase leading-5 tracking-wide text-stone-600 sm:mb-0">
                 {entry.dates}
               </p>
               <div>
                 <h3 className="text-lg font-semibold leading-6 tracking-tight text-stone-950">{entry.title}</h3>
-                <p className="mt-1 text-sm leading-6 text-stone-500">
+                <p className="mt-1 text-sm leading-6 text-stone-600">
                   {entry.organization}
                   {entry.location && <span> · {entry.location}</span>}
                 </p>
@@ -202,7 +202,7 @@ export default function Experience() {
       <TimelineSection number="01" title="Experience" entries={experience} />
       <TimelineSection number="02" title="Research" entries={research} />
 
-      <footer className="flex items-center justify-between border-t border-stone-300 pt-6 text-xs text-stone-500">
+      <footer className="flex items-center justify-between border-t border-stone-300 pt-6 text-xs text-stone-600">
         <p>© 2026 Kaden Hyatt</p>
         <Link href="/" className="underline decoration-stone-300 underline-offset-4 hover:text-stone-950">
           Back home

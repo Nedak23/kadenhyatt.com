@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const links = [
   { label: 'Timeline', href: '/experience' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kaden-hyatt/' },
@@ -11,7 +13,7 @@ const previousProjects = [
     href: 'https://journals.sagepub.com/doi/10.1177/20531680251414927',
     description:
       'Research on how different policy framings affect attitudes toward climate change policy.',
-    detail: 'Published in Research & Politics · 2026',
+    detail: 'Co-author · UChicago Social Sciences · Published 2026',
   },
   {
     title: 'Political Bias Drift in Post-Trained LLMs',
@@ -33,9 +35,9 @@ export default function Home() {
   return (
     <main className="mx-auto min-h-screen max-w-5xl px-5 py-6 sm:px-8 sm:py-10">
       <header className="flex flex-col gap-5 border-b border-stone-300 pb-6 sm:flex-row sm:items-center sm:justify-between">
-        <a href="/" className="text-base font-semibold tracking-tight">
+        <Link href="/" className="text-base font-semibold tracking-tight">
           Kaden Hyatt
-        </a>
+        </Link>
         <nav aria-label="Primary navigation">
           <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-stone-600">
             {links.map((link) => {
@@ -84,7 +86,7 @@ export default function Home() {
           </div>
 
           <aside className="self-end border-l-2 border-orange-700 pl-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">Currently</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-600">Currently</p>
             <p className="mt-3 leading-6 text-stone-700">
               Working on agent orchestration at{' '}
               <a
@@ -104,7 +106,7 @@ export default function Home() {
         <section className="border-b border-stone-300 py-12 sm:py-16" aria-labelledby="current-projects">
           <div className="grid gap-7 sm:grid-cols-[12rem_1fr] sm:gap-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">01</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-600">01</p>
               <h2 id="current-projects" className="mt-2 text-xl font-semibold tracking-tight">
                 Current project
               </h2>
@@ -127,8 +129,8 @@ export default function Home() {
                 </span>
               </div>
               <p className="mt-5 max-w-2xl leading-7 text-stone-600">
-                A deck-building game created to solve some of the genre&apos;s biggest problems. We crowdfunded
-                $100k from more than 1,000 backers, fully funded within two hours, and are now manufacturing and
+                A deck-building game created to solve some of the problems we had with the genre. We crowdfunded
+                $90k from more than 1,000 backers, fully funded within two hours, and are now manufacturing and
                 fulfilling the game.
               </p>
             </article>
@@ -138,7 +140,7 @@ export default function Home() {
         <section className="py-12 sm:py-16" aria-labelledby="previous-projects">
           <div className="grid gap-7 sm:grid-cols-[12rem_1fr] sm:gap-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">02</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-600">02</p>
               <h2 id="previous-projects" className="mt-2 text-xl font-semibold tracking-tight">
                 Selected work
               </h2>
@@ -159,7 +161,7 @@ export default function Home() {
                   </h3>
                   <div className="mt-3 sm:mt-0">
                     <p className="leading-6 text-stone-600">{project.description}</p>
-                    <p className="mt-3 text-xs uppercase tracking-wide text-stone-500">{project.detail}</p>
+                    <p className="mt-3 text-xs uppercase tracking-wide text-stone-600">{project.detail}</p>
                   </div>
                 </article>
               ))}
@@ -168,7 +170,7 @@ export default function Home() {
         </section>
       </div>
 
-      <footer className="flex flex-col gap-2 border-t border-stone-300 pt-6 text-xs text-stone-500 sm:flex-row sm:items-center sm:justify-between">
+      <footer className="flex flex-col gap-2 border-t border-stone-300 pt-6 text-xs text-stone-600 sm:flex-row sm:items-center sm:justify-between">
         <p>© 2026 Kaden Hyatt</p>
         <p>Built with Next.js and good typography.</p>
       </footer>
