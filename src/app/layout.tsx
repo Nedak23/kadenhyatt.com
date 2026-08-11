@@ -6,7 +6,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Kaden Hyatt',
-  description: 'Personal website of Kaden Hyatt',
+  description: 'Kaden Hyatt is a student, builder, and researcher working on intelligent systems and games.',
 }
 
 export default function RootLayout({
@@ -16,9 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.className}>
-        {children}
-      </body>
+      <body className={`${jetbrainsMono.className} antialiased`}>{children}</body>
     </html>
   )
-} 
+}
